@@ -31,14 +31,7 @@
     text-decoration: none;
 
     &--active {
-      &::before {
-        @include pseudo();
-        left: 0;
-        bottom: -6px;
-        width: 100%;
-        height: 6px;
-        background-color: $warning-color;
-      }
+      color: $warning-color;
     }
   }
 }

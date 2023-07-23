@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 14px;
+  width: 100%;
+  padding: 20px;
+  background-color: $main-color;
+  color: #ffffff;
+
+  &__help {
+    display: inline-flex;
+    margin-left: auto;
+    font-size: 0.75rem;
+  }
+
+  &__help-link {
+    @include hover();
+    margin-left: 0.5em;
+
+    &,
+    &:visited,
+    &:active {
+      text-decoration: none;
+      color: $warning-color;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-xs) {
+  .header {
+
+    &__help {
+      margin-left: unset;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import 'node_modules/normalize.css/normalize';
+
+@import 'fonts';
+@import 'variables';
+
+@import 'mixins/mixins';
+@import 'mixins/typography';
+
+// @import 'sprite-png';
+// @import 'sprite-svg';
+
+// @import 'blocks/popup';
+
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/main-nav';
+@import 'blocks/main-top';
+@import 'blocks/main-bottom';
+@import 'blocks/download-btn';
+@import 'blocks/policy';

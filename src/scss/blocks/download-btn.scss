@@ -1,0 +1,18 @@
+.download-btn {
+  @include hover();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 25px;
+  background-color: $main-color;
+  border-radius: 40px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+
+  &--bottom {
+    padding: 24px 29px;
+    background-color: #ffffff;
+    color: $main-color;
+  }
+}

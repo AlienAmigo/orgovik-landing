@@ -1,0 +1,26 @@
+extends ../pug/layout.pug
+
+block meta
+  title= MainMenuData['about'].name
+  meta(name='description', content='')
+  - let myPageTitle = MainMenuData['about'].name;
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block content
+  section.main-top
+    .main-top__text-wrapper
+      h1.main-top__title= appTitle
+      p.main-top__text Приложение для управления проектами, для организации работы коллективов территориально распределенных сотрудников.
+      button.download-btn(type='button') Скачать приложение
+
+  section.main-bottom
+    p.main-bottom__text Загрузите приложение сейчас и получите преимущества
+    button.download-btn.download-btn--bottom(type='button') Скачать приложение
+
+//- block footer
+//-   p footer
+
+//- block append page-bottom
+//-   script(src='js/some.js')

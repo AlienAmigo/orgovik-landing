@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>О программе</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230724002444">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230726071531">
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       
@@ -39,19 +39,134 @@
         </header>
         <section class="main-top">
           <div class="main-top__text-wrapper">
-            <h1 class="main-top__title">Орговик</h1>
-            <p class="main-top__text">Приложение для таск-менеджмента: постановка, выполнение и контроль групповых задач любых типов.</p>
-            <button class="download-btn" type="button">Скачать приложение</button>
+            <div class="main-top__text-col">
+              <h1 class="main-top__title">Орговик</h1>
+              <p class="main-top__text">Приложение для таск-менеджмента: постановка, выполнение и контроль групповых задач любых типов.</p>
+              <button class="download-btn" type="button">Скачать приложение</button>
+            </div>
+          </div>
+          <div class="main-top__img-wrapper">
+            <picture class="main-top__picture">
+              <source media="(max-width: 1024px)" srcset="img/orgovik_xs.png"><img class="main-top__img" src="img/orgovik_lg.png" alt="Орговик" loading="lazy">
+            </picture>
           </div>
         </section>
-        <!--section.main-bottom-->
-        <!--  p.main-bottom__text Загрузите приложение сейчас и получите преимущества-->
-        <!--  button.download-btn.download-btn--bottom(type='button') Скачать приложение-->
+        <section class="features">
+          <div class="feature">
+            <div class="feature__text-wrapper xs-only"><img class="feature__ico" src="img/task_ico.svg" alt="Постановка и выполнение задач">
+              <h3 class="feature__title">Постановка и выполнение задач</h3>
+              <ul class="feature__list">
+                <li class="feature__item">Создавать групповые задачи любых типов</li>
+                <li class="feature__item">Гибкая настройка алгоритма выполнения работ Исполнителями при постановке групповых задач</li>
+                <li class="feature__item">Возможность автоматической постановки задач по произвольным выборкам адресов, территорий, контрагентов</li>
+                <li class="feature__item">Возможность автоматической постановки задач по произвольным выборкам адресов, территорий, контрагентов</li>
+                <li class="feature__item">Возможность автоматически ставить групповые задачи с любым количеством Исполнителей</li>
+                <li class="feature__item">Автоматический сбор отчетов по результатам выполнения задач</li>
+              </ul>
+            </div>
+            <div class="feature__xs-img-wrapper xs-only"><picture><source srcset="img/task_xs.webp" type="image/webp"><img class="feature__xs-img" src="img/task_xs.png" alt="Постановка и выполнение задач"></picture></div>
+          </div>
+          <div class="feature">
+            <div class="feature__text-wrapper xs-only"><img class="feature__ico" src="img/plan_ico.svg" alt="Планирование проектов и работ">
+              <h3 class="feature__title">Планирование проектов и работ</h3>
+              <ul class="feature__list">
+                <li class="feature__item">Осуществлять календарное планирование работ в удобном таск-трекере</li>
+              </ul>
+            </div>
+            <div class="feature__xs-img-wrapper xs-only"><picture><source srcset="img/plan_xs.webp" type="image/webp"><img class="feature__xs-img" src="img/plan_xs.png" alt="Планирование проектов и работ"></picture></div>
+          </div>
+          <div class="feature">
+            <div class="feature__text-wrapper xs-only"><img class="feature__ico" src="img/control_ico.svg" alt="Контроль задач">
+              <h3 class="feature__title">Контроль задач</h3>
+              <ul class="feature__list">
+                <li class="feature__item">Контроль работы Исполнителей с помощью геоточек, с выводом на Карту</li>
+                <li class="feature__item">Автоматическая фиксация даты и времени выполнения работ</li>
+                <li class="feature__item">Фото отчеты</li>
+              </ul>
+            </div>
+            <div class="feature__xs-img-wrapper xs-only"><picture><source srcset="img/control_xs.webp" type="image/webp"><img class="feature__xs-img" src="img/control_xs.png" alt="Контроль задач"></picture></div>
+          </div>
+          <div class="feature">
+            <div class="feature__text-wrapper xs-only feature__text-wrapper--white"><img class="feature__ico" src="img/passport_ico.svg" alt="Паспортизация территорий">
+              <h3 class="feature__title">Паспортизация территорий</h3>
+              <ul class="feature__list">
+                <li class="feature__item">Удобный функционал для описания территориальных объектов по различным параметрам, для целей мониторинга и паспортизации территорий</li>
+                <li class="feature__item">Возможность создавать геоточки с привязкой к Карте для последующей постановки задач Исполнителям для работы в данных точках</li>
+              </ul>
+            </div>
+            <div class="feature__xs-img-wrapper xs-only"><picture><source srcset="img/passport_xs.webp" type="image/webp"><img class="feature__xs-img" src="img/passport_xs.png" alt="Паспортизация территорий"></picture></div>
+            <div class="feature__xs-img-wrapper xs-only"><picture><source srcset="img/passport_xs_2.webp" type="image/webp"><img class="feature__xs-img" src="img/passport_xs_2.png" alt="Паспортизация территорий"></picture></div>
+          </div>
+          <div class="feature__first-text-block xs-hidden">
+            <div class="feature__first-text-block-wrapper">
+              <div class="feature__text-wrapper"><img class="feature__ico" src="img/task_ico.svg" alt="Постановка и выполнение задач">
+                <h3 class="feature__title">Постановка и выполнение задач</h3>
+                <ul class="feature__list">
+                  <li class="feature__item">Создавать групповые задачи любых типов</li>
+                  <li class="feature__item">Гибкая настройка алгоритма выполнения работ Исполнителями при постановке групповых задач</li>
+                  <li class="feature__item">Возможность автоматической постановки задач по произвольным выборкам адресов, территорий, контрагентов</li>
+                  <li class="feature__item">Возможность автоматической постановки задач по произвольным выборкам адресов, территорий, контрагентов</li>
+                  <li class="feature__item">Возможность автоматически ставить групповые задачи с любым количеством Исполнителей</li>
+                  <li class="feature__item">Автоматический сбор отчетов по результатам выполнения задач</li>
+                </ul>
+              </div>
+              <div class="feature__text-wrapper"><img class="feature__ico" src="img/plan_ico.svg" alt="Планирование проектов и работ">
+                <h3 class="feature__title">Планирование проектов и работ</h3>
+                <ul class="feature__list">
+                  <li class="feature__item">Осуществлять календарное планирование работ в удобном таск-трекере</li>
+                </ul>
+              </div>
+              <div class="feature__text-wrapper"><img class="feature__ico" src="img/control_ico.svg" alt="Контроль задач">
+                <h3 class="feature__title">Контроль задач</h3>
+                <ul class="feature__list">
+                  <li class="feature__item">Контроль работы Исполнителей с помощью геоточек, с выводом на Карту</li>
+                  <li class="feature__item">Автоматическая фиксация даты и времени выполнения работ</li>
+                  <li class="feature__item">Фото отчеты</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="feature__img-group-wrapper">
+            <picture>
+              <source srcset="img/task_lg.png" media="(min-width: 1280px)">
+              <source srcset="img/task_md.png" media="(min-width: 1024px)"><img class="feature__img" src="img/task_md.png">
+            </picture>
+            <picture>
+              <source srcset="img/plan_lg.png" media="(min-width: 1280px)">
+              <source srcset="img/plan_md.png" media="(min-width: 1024px)"><img class="feature__img" src="img/plan_md.png">
+            </picture>
+            <picture>
+              <source srcset="img/control_lg.png" media="(min-width: 1280px)">
+              <source srcset="img/control_md.png" media="(min-width: 1024px)"><img class="feature__img" src="img/control_md.png">
+            </picture>
+          </div>
+          <div class="feature__first-text-block--white xs-hidden">
+            <div class="feature__first-text-block-wrapper feature__first-text-block-wrapper--last">
+              <div class="feature__text-wrapper feature__text-wrapper--last feature__text-wrapper--white"><img class="feature__ico" src="img/passport_ico.svg" alt="Паспортизация территорий">
+                <h3 class="feature__title">Паспортизация территорий</h3>
+                <ul class="feature__list feature__list--two-col">
+                  <li class="feature__item">Удобный функционал для описания территориальных объектов по различным параметрам, для целей мониторинга и паспортизации территорий</li>
+                  <li class="feature__item">Возможность создавать геоточки с привязкой к Карте для последующей постановки задач Исполнителям для работы в данных точках</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="feature__img-group-wrapper">
+            <picture>
+              <source srcset="img/passport_01_lg.png" media="(min-width: 1280px)">
+              <source srcset="img/passport_01_md.png" media="(min-width: 1024px)"><img class="feature__img" src="img/passport_01_md.png">
+            </picture>
+            <picture>
+              <source srcset="img/passport_01_lg.png" media="(min-width: 1280px)">
+              <source srcset="img/passport_02_md.png" media="(min-width: 1024px)"><img class="feature__img" src="img/passport_02_md.png">
+            </picture>
+          </div>
+        </section>
       </div>
       <!--.page__footer-wrapper-->
       <!--  block footer-->
       <!--    p Подвал-->
     </div>
-    <script src="js/script.min.js?_v=20230724002444"></script>
+    <script src="js/script.min.js?_v=20230726071531"></script>
   </body>
 </html>

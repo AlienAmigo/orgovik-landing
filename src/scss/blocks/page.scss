@@ -30,5 +30,17 @@
     flex: 1;
   }
 
-  // &__footer-wrapper {}
+  .xs-hidden {
+    display: none;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    .xs-only {
+      display: none;
+    }
+
+    .xs-hidden {
+      display: grid;
+    }
+  }
 }

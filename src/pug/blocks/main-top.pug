@@ -1,0 +1,14 @@
+section.main-top
+  .main-top__text-wrapper
+    .main-top__text-col
+      h1.main-top__title= appTitle
+      p.main-top__text Приложение для таск-менеджмента: постановка, выполнение и контроль групповых задач любых типов.
+      button.download-btn(type='button') Скачать приложение
+  .main-top__img-wrapper
+    picture.main-top__picture
+      source(media='(max-width: 1024px)', srcset='img/orgovik_xs.png')
+      img.main-top__img(
+        src='img/orgovik_lg.png',
+        alt='Орговик',
+        loading='lazy')
+

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: max-content;
   padding: 16px 25px;
   background-color: $warning-color;
   border-radius: 40px;
@@ -14,5 +15,11 @@
     padding: 24px 29px;
     background-color: #ffffff;
     color: $main-color;
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .download-btn {
+    padding: 24px 58px;
   }
 }

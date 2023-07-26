@@ -9,18 +9,57 @@ block meta
 //-   link(rel='stylesheet', href='css/some.css')
 
 block content
-  section.main-top
-    .main-top__text-wrapper
-      h1.main-top__title= appTitle
-      p.main-top__text Приложение для таск-менеджмента: постановка, выполнение и контроль групповых задач любых типов.
-      button.download-btn(type='button') Скачать приложение
+  include ../pug/blocks/main-top.pug
+  section.features
+    each item, index in FeaturesData
+      .feature
+        .feature__text-wrapper.xs-only(
+          class=`${index === FeaturesData.length - 1 ? 'feature__text-wrapper--white' : ''}`)
+          img.feature__ico(src=`${item.ico}`, alt=`${item.title}`)
+          h3.feature__title= item.title
+          ul.feature__list
+            each el in item.features
+              li.feature__item= el
+        .feature__xs-img-wrapper.xs-only
+          img.feature__xs-img(src=`${item.img.xs}`, alt=`${item.title}`)
+        - if (index === FeaturesData.length - 1)
+          .feature__xs-img-wrapper.xs-only
+            img.feature__xs-img(src=`${item.img.xs2}`, alt=`${item.title}`)
 
-  //section.main-bottom
-  //  p.main-bottom__text Загрузите приложение сейчас и получите преимущества
-  //  button.download-btn.download-btn--bottom(type='button') Скачать приложение
+    .feature__first-text-block.xs-hidden
+      .feature__first-text-block-wrapper
+        each item in FeaturesData.filter((el, index) => index < 3)
+          .feature__text-wrapper
+            img.feature__ico(src=`${item.ico}`, alt=`${item.title}`)
+            h3.feature__title= item.title
+            ul.feature__list
+              each el in item.features
+                li.feature__item= el
 
-//- block footer
-//-   p footer
+    .feature__img-group-wrapper
+      each item in FeaturesData.filter((el, index) => index < 3)
+        picture
+          source(srcset=`${item.img.lg}`, media='(min-width: 1280px)')
+          source(srcset=`${item.img.md}`, media='(min-width: 1024px)')
+          img.feature__img(src=`${item.img.md}`)
 
-//- block append page-bottom
-//-   script(src='js/some.js')
+    .feature__first-text-block--white.xs-hidden
+      .feature__first-text-block-wrapper.feature__first-text-block-wrapper--last
+        each item in FeaturesData.filter((el, index) => index === FeaturesData.length - 1)
+          .feature__text-wrapper.feature__text-wrapper--last.feature__text-wrapper--white
+            img.feature__ico(src=`${item.ico}`, alt=`${item.title}`)
+            h3.feature__title= item.title
+            ul.feature__list.feature__list--two-col
+              each el in item.features
+                li.feature__item= el
+
+    .feature__img-group-wrapper
+      each item in FeaturesData.filter((el, index) => index === FeaturesData.length - 1)
+        picture
+          source(srcset=`${item.img.lg}`, media='(min-width: 1280px)')
+          source(srcset=`${item.img.md}`, media='(min-width: 1024px)')
+          img.feature__img(src=`${item.img.md}`)
+        picture
+          source(srcset=`${item.img.lg2}`, media='(min-width: 1280px)')
+          source(srcset=`${item.img.md2}`, media='(min-width: 1024px)')
+          img.feature__img(src=`${item.img.md2}`)

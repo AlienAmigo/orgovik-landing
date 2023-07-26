@@ -31,7 +31,7 @@
 @media screen and (min-width: $screen-sm) {
   .main-top {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     min-height: 553px;
 
     &__text-wrapper {
@@ -43,6 +43,8 @@
       display: flex;
       flex-direction: column;
       width: max-content;
+      max-width: 100%;
+      margin-left: auto;
     }
 
     &__title {
@@ -76,7 +78,7 @@
 @media screen and (min-width: $screen-lg) {
   .main-top {
     &__text-col {
-      align-self: flex-end;
+      margin-left: auto;
     }
   }
 }
